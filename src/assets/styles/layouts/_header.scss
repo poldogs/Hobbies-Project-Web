@@ -1,0 +1,68 @@
+$uoc-corporate: #000078;
+$uoc-masterbrand: #73edff;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: $uoc-corporate;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu-list li {
+    margin-right: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: $uoc-masterbrand;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    .menu-list.active {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
