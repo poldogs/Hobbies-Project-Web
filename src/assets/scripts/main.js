@@ -10,20 +10,27 @@
  * Write any other JavaScript below
  */
 
-+( function() {
-  const university = "UOC";
-  console.log(`Hello, ${university}!`);
-} )();
-
 //Menu functions
-document.addEventListener("DOMContentLoaded", function () {
-  const menuButton = document.querySelector(".menu-button");
-  const menuList = document.querySelector(".menu-list");
+document.addEventListener('DOMContentLoaded', function () {
+    const menuItems = document.querySelectorAll('.menu__item');
+    const sections = document.querySelectorAll('section');
 
-  menuButton.addEventListener("click", function () {
-      menuList.classList.toggle("active");
-  });
+    window.addEventListener('scroll', () => {
+        const scrollPosition = window.scrollY;
+
+        sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop - 1; // Ajusta para mejorar la detección
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                menuItems.forEach((item) => item.classList.remove('menu__item--active'));
+                menuItems[index].classList.add('menu__item--active');
+            }
+        });
+    });
 });
+
+
 
 
 // Testimonials

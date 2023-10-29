@@ -1,68 +1,60 @@
-$uoc-corporate: #000078;
-$uoc-masterbrand: #73edff;
-
+/* Estilos globales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: $uoc-corporate;
-    color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
+/* Estilos del menú */
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
+  background-color: #000078;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  text-align: center;
+  transition: background-color 0.3s;
 
-.menu-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+  &__navigation {
+      display: flex;
+      justify-content: space-around;
+  }
 
-.menu-list li {
-    margin-right: 20px;
-}
+  &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  }
 
-.menu-list a {
-    text-decoration: none;
-    color: white;
-}
+  &__item {
+      margin: 0 15px;
+  }
 
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
+  &__link {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
 
-@media (max-width: 768px) {
-    .menu-list {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        background-color: $uoc-masterbrand;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-    }
+      &:hover {
+          color: #73edff;
+      }
+  }
 
-    .menu-list.active {
-        display: flex;
-    }
+  @media (max-width: 768px) {
+      &__navigation {
+          flex-direction: column;
+          align-items: center;
+      }
 
-    .menu-button {
-        display: block;
-    }
+      &__item {
+          margin: 10px 0;
+      }
+  }
+
+  /* Estilo para la sección activa en el menú */
+  &__item--active {
+      background-color: #73edff;
+  }
 }
