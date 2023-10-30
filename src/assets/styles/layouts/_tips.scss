@@ -1,0 +1,44 @@
+// Estilos para la sección de consejos
+.consejos-cocina {
+    position: relative;
+    background-image: url(../images/tips.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 0;
+    text-align: center;
+    color: #fff;
+  
+    // Estilos para el contenido
+    .consejos-content {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          font-size: 18px;
+          margin-bottom: 10px;
+          line-height: 1.5; // Aumenta el interlineado de los consejos
+          i {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+  
+  // Estilos responsivos para dispositivos pequeños
+  @media (max-width: 768px) {
+    .consejos-cocina {
+      .consejos-content {
+        padding: 10px;
+      }
+    }
+  }
+  

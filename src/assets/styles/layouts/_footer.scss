@@ -1,0 +1,32 @@
+.footer {
+    padding: 20px 0;
+    text-align: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        margin: 0 10px;
+        margin-top: 1em;
+        font-size: 18px;
+        color: #333;
+
+        &:hover {
+            color: #0073e6;
+        }
+    }
+
+    &__logo {
+        height: 100px;
+        width: auto;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+    }
+}

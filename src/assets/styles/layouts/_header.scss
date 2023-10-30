@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   transition: background-color 0.3s;
 
@@ -25,6 +25,8 @@
 
   &__item {
       margin: 0 15px;
+      padding: 0.5rem;
+      border-radius: 5px;
   }
 
   &__link {
@@ -46,14 +48,10 @@
       &__list {
         display: block;
       }
-
-      &__item {
-          margin: 10px 0;
-      }
   }
 
   /* Estilo para la sección activa en el menú */
   &__item--active {
-      background-color: #73edff;
+      background-color: #333;
   }
 }

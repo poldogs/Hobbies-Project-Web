@@ -1,58 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.8);
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  margin: 0 10px;
+  flex: 0 0 auto;
+  border-radius: 15px;
+  padding: 20px; /* Agrega espacio alrededor del contenido del testimonio */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.testimonial-background {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.testimonial-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 15px; /* Ajusta el border-radius para que coincida con el fondo */
+}
+
+.testimonial-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  padding: 50px; /* Agrega espacio alrededor del texto */
+}
+
+.testimonial-author {
+  font-size: 14px;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.prev-button,
+.next-button {
+  display: block;
+  margin: 10px; /* Agrega espacio entre los botones */
+  text-align: center;
+  background-color: #0073e6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #005bb4;
   }
-  
-  .testimonials-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    overflow: hidden;
-  }
-  
-  .testimonial {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 400px;
-    text-align: center;
-    display: none;
-    position: relative;
-  }
-  
-  .testimonial-background {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-text {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .testimonial-author {
-    font-size: 14px;
-  }
-  
-  .prev-button,
-  .next-button {
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px 15px;
-    font-size: 20px;
-    margin: 10px;
-    cursor: pointer;
-  }
-  
-  .prev-button:hover,
-  .next-button:hover {
-    background-color: #555;
-  }
-  
-  
+}
