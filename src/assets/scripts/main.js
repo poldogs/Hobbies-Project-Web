@@ -62,29 +62,29 @@ showTestimonial(currentIndex);
 
 
 
-//Recipes
 document.addEventListener("DOMContentLoaded", function () {
-  const tabs = document.querySelectorAll(".nav-link");
-  tabs.forEach(tab => {
-      tab.addEventListener("click", function () {
-          const target = this.getAttribute("data-target");
-          const tabPanes = document.querySelectorAll(".tab-pane");
-          
-          tabPanes.forEach(pane => {
-              if (pane.id === target) {
-                  pane.classList.add("active");
-              } else {
-                  pane.classList.remove("active");
-              }
-          });
-
-          tabs.forEach(t => {
-              t.classList.remove("active");
-          });
-
-          this.classList.add("active");
-      });
+    const tabs = document.querySelectorAll(".nav-link");
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+            const target = this.getAttribute("data-target");
+            const tabPanes = document.querySelectorAll(".tab-pane");
+            
+            tabPanes.forEach(pane => {
+                if (pane.id === target) {
+                    pane.classList.add("tab-pane--active");
+                } else {
+                    pane.classList.remove("tab-pane--active");
+                }
+            });
+  
+            tabs.forEach(t => {
+                t.classList.remove("nav-link--active");
+            });
+  
+            this.classList.add("nav-link--active");
+        });
+    });
   });
-});
+  
 
 

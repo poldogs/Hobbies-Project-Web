@@ -1,42 +1,78 @@
-<section id="section-2">
-<div class="container">
-        <ul class="nav" id="myTabs">
+<section id="section-2" class="recipes">
+    <div class="container">
+        <h2>Mis recetas favoritas</h2>
+        <ul class="nav nav--tabs" id="myTabs">
             <li class="nav-item">
-                <a class="nav-link active" data-target="espana">España</a>
+                <a class="nav-link nav-link--active" data-target="espana"><h3><i class="fa-solid fa-shrimp"></i> España</h3></a>
+            </li>
+            <li class "nav-item">
+                <a class="nav-link" data-target="italia"><h3><i class="fa-solid fa-pizza-slice"></i> Italia</h3></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-target="italia">Italia</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-target="asia">Asia</a>
+                <a class="nav-link" data-target="asia"><h3><i class="fa-solid fa-bowl-food"></i> Asia</h3></a>
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" id="espana">
-                <h2>Recetas de España</h2>
-                <ul>
-                    <li>Tortilla Española: Tortilla de patatas y cebolla.</li>
-                    <li>Gazpacho: Sopa fría de tomate y verduras.</li>
-                    <li>Paella: Arroz con mariscos y pollo.</li>
+            <div class="tab-pane tab-pane--active" id="espana">
+                <h3 class="tab-title">Recetas de España</h3>
+                <ul class="recipe-list">
+                    <li class="recipe">
+                        <strong>Paella:</strong>
+                        <p><strong>Ingredientes:</strong> 2 tazas de arroz, 1/2 taza de guisantes, 1/2 taza de pimientos rojos, 1/2 taza de camarones, 1/2 taza de mejillones.</p>
+                        <p><strong>Preparación:</strong> En una paellera, sofría el arroz en aceite hasta que esté dorado. Agregue los guisantes, los pimientos y los mariscos. Añada caldo caliente y cocine hasta que el arroz esté tierno.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Tortilla Española:</strong>
+                        <p><strong>Ingredientes:</strong> 4 huevos, 2 patatas, 1 cebolla, Aceite de oliva.</p>
+                        <p><strong>Preparación:</strong> Cortar las patatas y la cebolla en rodajas finas y freírlas hasta que estén doradas. Batir los huevos y añadir las patatas y la cebolla. Cocinar la mezcla en una sartén hasta que esté cuajada.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Gazpacho:</strong>
+                        <p><strong>Ingredientes:</strong> 6 tomates maduros, 1 pepino, 1 pimiento verde, 1 diente de ajo, Aceite de oliva.</p>
+                        <p><strong>Preparación:</strong> Mezclar los tomates, el pepino, el pimiento y el ajo en una licuadora. Añadir aceite de oliva y sal al gusto. Enfriar en la nevera antes de servir.</p>
+                    </li>
                 </ul>
             </div>
             <div class="tab-pane" id="italia">
-                <h2>Recetas de Italia</h2>
-                <ul>
-                    <li>Pizza Margarita: Tomate, mozzarella y albahaca.</li>
-                    <li>Pasta Carbonara: Pasta con huevo, queso y panceta.</li>
-                    <li>Lasagna: Pasta, carne y salsa de tomate.</li>
+                <h3 class="tab-title">Recetas de Italia</h3>
+                <ul class="recipe-list">
+                    <li class="recipe">
+                        <strong>Pizza Margarita:</strong>
+                        <p><strong>Ingredientes:</strong> Masa de pizza, Salsa de tomate, Mozzarella, Albahaca fresca.</p>
+                        <p><strong>Preparación:</strong> Extender la masa de pizza en una bandeja. Cubrir con salsa de tomate, mozzarella y hojas de albahaca. Hornear hasta que la pizza esté dorada.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Pasta Carbonara:</strong>
+                        <p><strong>Ingredientes:</strong> Pasta, Huevos, Queso Parmesano, Panceta.</p>
+                        <p><strong>Preparación:</strong> Cocinar la pasta al dente y reservar. Saltear la panceta en una sartén. Mezclar la pasta con huevos y queso rallado, luego agregar la panceta.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Lasagna:</strong>
+                        <p><strong>Ingredientes:</strong> Láminas de lasaña, Carne molida, Salsa de tomate, Bechamel.</p>
+                        <p><strong>Preparación:</strong> Cocinar la carne y mezclarla con la salsa de tomate. En una fuente, intercalar láminas de lasaña, carne y bechamel. Hornear hasta que esté dorada.</p>
+                    </li>
                 </ul>
             </div>
             <div class="tab-pane" id="asia">
-                <h2>Recetas de Asia</h2>
-                <ul>
-                    <li>Sushi: Arroz y pescado enrollado en algas nori.</li>
-                    <li>Curry de Pollo: Pollo en salsa de curry con arroz.</li>
-                    <li>Dim Sum: Variedad de bocadillos chinos.</li>
+                <h3 class="tab-title">Recetas de Asia</h3>
+                <ul class="recipe-list">
+                    <li class="recipe">
+                        <strong>Curry de Pollo:</strong>
+                        <p><strong>Ingredientes:</strong> Pechugas de pollo, Salsa de curry, Arroz.</p>
+                        <p><strong>Preparación:</strong> Cortar el pollo en trozos y cocinar con la salsa de curry. Servir con arroz.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Sushi:</strong>
+                        <p><strong>Ingredientes:</strong> Arroz, Pescado (salmón, atún, etc.), Algas nori.</p>
+                        <p><strong>Preparación:</strong> Extender el arroz sobre el alga nori, añadir pescado y enrollar. Cortar en rodajas y servir con salsa de soja.</p>
+                    </li>
+                    <li class="recipe">
+                        <strong>Dim Sum:</strong>
+                        <p><strong>Ingredientes:</strong> Variedad de bocadillos chinos (como dumplings y bollos al vapor).</p>
+                        <p><strong>Preparación:</strong> Cocinar o al vapor o hervir según las instrucciones del paquete. Servir con salsa de soja o salsa de cacahuate.</p>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
-</section>    
-
+</section>
