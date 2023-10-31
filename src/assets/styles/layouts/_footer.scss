@@ -16,13 +16,14 @@
         color: #333;
 
         &:hover {
-            color: #0073e6;
+            color: $uoc-corporate;
         }
     }
 
     &__logo {
         height: 100px;
         width: auto;
+        max-width: 100%;
     }
 
     &__text {

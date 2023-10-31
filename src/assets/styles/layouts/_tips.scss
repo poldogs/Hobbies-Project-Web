@@ -1,4 +1,4 @@
-// Estilos para la sección de consejos
+
 .consejos-cocina {
     position: relative;
     background-image: url(../images/tips.jpg);
@@ -8,7 +8,6 @@
     text-align: center;
     color: #fff;
   
-    // Estilos para el contenido
     .consejos-content {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 20px;
@@ -17,6 +16,7 @@
       h2 {
         font-size: 24px;
         margin-bottom: 20px;
+        color: $uoc-masterbrand;
       }
       ul {
         list-style: none;
@@ -24,7 +24,7 @@
         li {
           font-size: 18px;
           margin-bottom: 10px;
-          line-height: 1.5; // Aumenta el interlineado de los consejos
+          line-height: 1.5; 
           i {
             font-style: italic;
           }
@@ -33,7 +33,6 @@
     }
   }
   
-  // Estilos responsivos para dispositivos pequeños
   @media (max-width: 768px) {
     .consejos-cocina {
       .consejos-content {

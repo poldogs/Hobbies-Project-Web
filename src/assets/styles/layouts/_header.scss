@@ -1,6 +1,6 @@
-/* Estilos del menú */
+
 .menu {
-  background-color: #000078;
+  background-color: $uoc-corporate;
   color: #fff;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@
       transition: color 0.3s;
 
       &:hover {
-          color: #73edff;
+          color: $uoc-masterbrand;
       }
   }
 

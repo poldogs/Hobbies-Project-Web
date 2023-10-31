@@ -1,67 +1,58 @@
-.introduction-bg {
-  background-image: url('../images/chef-cooking.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+
+.intro-section {
   position: relative;
-  overflow: hidden;
+  background-image: url(../images/chef-cooking.jpg);
+  background-size: cover;
+  background-position: center center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 1rem;
+
+  .introduction-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    .intro-image{
+      border-radius: 10px;
+    }
+
+    .intro-text{
+      padding: 3rem;
+
+      .intro-title{
+        color: $uoc-masterbrand;
+        font-size: 35px;
+        text-transform: capitalize;
+        letter-spacing: 1rem;
+        font-weight: 900;
+      }    
+    }
+    
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+
+      .intro-image{
+        width: 80%;
+        height: auto;
+      }
+
+      .intro-text{
+        padding: 0;
+      }
+    }
+  }
 }
 
-.introduction-content {
-  text-align: center;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.6);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1200px;
-
-  .intro-image {
-    float: left;
-    margin-right: 1rem;
-    border-radius: 30px;
-
-  }
-
-  .intro-text {
-    float: none;
-  }
-
-  .intro-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-
-  .intro-paragraph {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333;
-  }
-
-  @media (max-width: 768px) {
-    .introduction-bg {
-      padding-top: 5%;
-    }
-
-    .intro-image {
-      float: none;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .intro-text {
-      text-align: center;
-    }
+@media (max-width: 768px){
+  .intro-section{
+    margin-top: 5rem;
+    padding-top: 5rem;
   }
 }

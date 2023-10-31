@@ -16,7 +16,7 @@
   margin: 0 10px;
   flex: 0 0 auto;
   border-radius: 15px;
-  padding: 20px; /* Agrega espacio alrededor del contenido del testimonio */
+  padding: 20px; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
 }
@@ -38,7 +38,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 15px; /* Ajusta el border-radius para que coincida con el fondo */
+  border-radius: 15px; 
 }
 
 .testimonial-text {
@@ -46,7 +46,7 @@
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
-  padding: 50px; /* Agrega espacio alrededor del texto */
+  padding: 50px; 
 }
 
 .testimonial-author {
@@ -64,7 +64,7 @@
 .prev-button,
 .next-button {
   display: block;
-  margin: 10px; /* Agrega espacio entre los botones */
+  margin: 10px; 
   text-align: center;
   background-color: #0073e6;
   color: #fff;
