@@ -61,7 +61,7 @@ nextButton.addEventListener("click", nextTestimonial);
 showTestimonial(currentIndex);
 
 
-
+//Recipes
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".nav-link");
     tabs.forEach(tab => {
